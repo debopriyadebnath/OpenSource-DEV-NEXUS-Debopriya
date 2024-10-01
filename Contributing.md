@@ -1,6 +1,6 @@
 Here’s the complete and revised README.md file with all the necessary guidelines for contributing to open-source projects, including the fork step in the terminal method.
 
-```markdown
+
 # Contributing to Open Source: Guidelines and Best Practices
 
 Welcome to the open-source community! Contributing to projects can be a rewarding experience, and this guide will help you navigate the process effectively. Whether you're a beginner or an experienced developer, adhering to best practices ensures a smooth contribution experience.
