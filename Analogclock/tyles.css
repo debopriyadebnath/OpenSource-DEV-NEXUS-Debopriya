@@ -1,0 +1,117 @@
+*{ 
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+    padding-inline-start: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #ca5c5c;
+
+}
+body{ 
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #212;
+    
+
+}
+.container
+{ 
+    position: relative;
+
+
+}
+.clock{ 
+    width: 600px;
+    height: 600px;
+    border-radius: 60%;
+    background-color: rgb(49, 5, 5);
+    border: 2px solid rgb(129, 129, 156);
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.clock sp{ 
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+.clock sp b{ 
+    transform:rotate(calc(-30* var(--i)));
+    display: inline-block;
+    font-size: 50px;
+}
+.clock::before{ 
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.hand{ 
+    /* position: absolute; */
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+   
+}
+.hand i{
+    position: absolute;
+    background-color: #fff;
+    width: 46px;
+    height: 70px;
+  border-radius:56px ;
+  justify-content: center;
+  align-items: center;
+
+}
+.hour-hand,
+.minute-hand,
+.second-hand{
+    background-color: var(--clr);
+    transform-origin:bottom center;
+    position: 100px;
+
+       
+}
+
+.hour-hand {
+  width: 6px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  margin-left: -3px;
+  transform: rotate(90deg);
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.minute-hand {
+  width: 4px;
+  height: 90px;
+  top: 50%;
+  left: 50%;
+  margin-left: -2px;
+  transform: rotate(180deg);
+  justify-content: center;
+  align-items: center;
+}
+
+.second-hand {
+  width: 2px;
+  height: 110px;
+  top: 50%;
+  left: 50%;
+  margin-left: -1px;
+  transform: rotate(270deg);
+  align-items: center;
+}
